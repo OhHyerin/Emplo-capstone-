@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/comment_item_shape"
+    android:backgroundTint="#FFFFFF"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/contactNametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="이름"
+        android:textColor="@color/emplobackground"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/contactPhonetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="전화번호"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:background="@drawable/comment_item_shape"
+            android:backgroundTint="#AC808F"
+            android:text="수 락"
+            android:layout_marginRight="5dp"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/remove_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:background="@drawable/comment_item_shape"
+            android:backgroundTint="@color/emplobackground"
+            android:text="삭 제"
+            android:textColor="#FFFFFF" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

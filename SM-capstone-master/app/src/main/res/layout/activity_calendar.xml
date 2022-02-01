@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/emplobackground"
+    android:orientation="vertical"
+    tools:context=".CalendarActivity">
+
+
+    <!--    새로 정의한 월별 캘린더 뷰 추가-->
+    <CalendarView
+        android:id="@+id/calendar"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--스케줄 리스트-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/schedule_date"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="TIME"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:id="@+id/btn_scheduleAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15sp"
+            android:layout_marginTop="5sp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/calendar_add"
+            ></ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5sp"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>

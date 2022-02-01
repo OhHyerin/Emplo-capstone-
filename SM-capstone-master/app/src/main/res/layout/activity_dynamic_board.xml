@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybackground"
+    android:orientation="vertical"
+    tools:context=".DynamicBoard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dynamic_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dynamic_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="동적 게시판 Daily Bulletin Board"
+            android:textColor="@color/emplobackground"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/bigbubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bigbubble"
+            android:layout_marginLeft="120dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/search_edit" />
+
+        <ImageView
+            android:id="@+id/smallbubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/smallbubble"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintLeft_toRightOf="@id/bigbubble"
+            app:layout_constraintTop_toTopOf="@id/standingPicture"/>
+        <ImageView
+            android:id="@+id/standingPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="132dp"
+            app:layout_constraintTop_toTopOf="@id/dynamic_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@drawable/a_human_standing"
+            />
+
+        <ImageView
+            android:id="@+id/search_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/searchimage"
+
+            android:layout_marginTop="100dp"
+            app:layout_constraintTop_toBottomOf="@id/dynamic_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="105dp"
+            android:backgroundTint="#93a4ac"
+            android:ems="13"
+            android:id="@+id/search_edit"
+
+            app:layout_constraintTop_toBottomOf="@id/dynamic_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DynamicBoard">
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="40sp"
+                android:layout_marginBottom="9sp"
+                android:layout_marginRight="15sp"
+                android:src="@drawable/postimage"
+                android:id="@+id/write_btn" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_marginRight="15sp"
+                android:layout_marginLeft="15sp"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graybackground"
+    tools:context=".SignupActivity">
+
+
+    <ImageView
+        android:id="@+id/NorthImage"
+        android:layout_width="219dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/team_work_monochromatic" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="259dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/triangle" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="이름"
+        android:textColor="@color/emplobackground"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2" />
+
+    <TextView
+        android:id="@+id/idText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:text="아이디"
+        android:textColor="@color/emplobackground"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <TextView
+        android:id="@+id/passText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:text="비밀번호"
+        android:textColor="@color/emplobackground"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idText" />
+
+    <TextView
+        android:id="@+id/passchkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:text="비밀번호 확인"
+        android:textColor="@color/emplobackground"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passText" />
+
+    <TextView
+        android:id="@+id/telText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:text="전화번호"
+        android:textColor="@color/emplobackground"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passchkText" />
+
+    <ImageView
+        android:id="@+id/nameImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        app:srcCompat="@drawable/blankbar" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="33dp"
+        android:background="@null"
+        android:textSize="13sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/nameImage" />
+
+    <ImageView
+        android:id="@+id/emailImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameImage"
+        app:srcCompat="@drawable/blankbar" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="185dp"
+        android:layout_marginEnd="90dp"
+        android:textSize="13sp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username" />
+
+    <ImageView
+        android:id="@+id/passImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailImage"
+        app:srcCompat="@drawable/blankbar" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="33dp"
+        android:textSize="13sp"
+        android:background="@null"
+        android:ems="10"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/passchkImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passImage"
+        app:srcCompat="@drawable/blankbar" />
+
+    <EditText
+        android:id="@+id/passCheck"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="33dp"
+        android:textSize="13sp"
+        android:background="@null"
+        android:ems="10"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/telImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passchkImage"
+        app:srcCompat="@drawable/blankbar" />
+
+    <EditText
+        android:id="@+id/phoneNum"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="33dp"
+        android:textSize="13sp"
+        android:ems="10"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@id/passCheck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="phone" />
+
+    <RadioGroup
+        android:id="@+id/posGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/storeNumLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+    <RadioButton
+        android:id="@+id/manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리자"/>
+    <RadioButton
+        android:id="@+id/employee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="직원"/>
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/valButton"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="125dp"
+        android:text="중복확인"
+        android:textSize="7sp"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintTop_toTopOf="@id/emailImage" />
+
+    <Button
+        android:id="@+id/regButton"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonround"
+        android:text="가입하기"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/posGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/storeNumImage"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:srcCompat="@drawable/blankbar"
+        app:layout_constraintTop_toBottomOf="@id/telText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/storeNameImage"/>
+
+    <EditText
+        android:id="@+id/storeNumLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="9"
+        android:hint="매장고유번호"
+        android:layout_marginStart="5dp"
+        android:textSize="13sp"
+        android:textColorHint="@color/emplobackground"
+        android:backgroundTint="@color/graybackground"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/telText"
+        app:layout_constraintLeft_toLeftOf="@id/storeNumImage"
+        app:layout_constraintRight_toLeftOf="@id/storeNameImage"
+        android:layout_marginTop="26dp"/>
+
+    <Button
+        android:id="@+id/valButton2"
+        android:layout_width="50dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="135dp"
+        android:text="중복확인"
+        android:textSize="7sp"
+        app:layout_constraintRight_toRightOf="@id/storeNumImage"
+        app:layout_constraintTop_toTopOf="@id/storeNumLayout" />
+
+    <ImageView
+        android:id="@+id/storeNameImage"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        app:srcCompat="@drawable/blankbar"
+        app:layout_constraintTop_toBottomOf="@id/telText"
+        app:layout_constraintLeft_toRightOf="@id/storeNumImage"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/storeNameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:textSize="13sp"
+        android:ems="9"
+        android:hint="매장명"
+        android:backgroundTint="@color/graybackground"
+        android:textColorHint="@color/emplobackground"
+        app:layout_constraintTop_toTopOf="@id/storeNumLayout"
+        app:layout_constraintLeft_toRightOf="@id/storeNumImage"
+        app:layout_constraintRight_toRightOf="parent"
+       />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
